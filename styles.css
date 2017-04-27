@@ -1,0 +1,337 @@
+* {
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+}
+
+.content {
+	min-height: 500px;
+	margin-bottom: 0;
+	clear: both;
+}
+body {
+	background-image: url("http://www.amsmeteors.org/wp-content/uploads/2013/08/IMG_1305-perseid-tree-composite.jpg");
+
+}
+/**{*/
+	/*box-sizing: border-box;*/
+
+/*}*/
+
+.page-wrapper {
+	text-align: center;
+}
+
+.header-align {
+	position: absolute;
+	width: 225px;
+	height: 75px;
+	top: 40%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -25px;
+	font-weight: 300;
+	color: white;
+	z-index: 2;
+}
+
+
+/*This is the code for the navbar*/
+
+.navbar {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color: darkseagreen;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: darkseagreen;
+}
+
+.portfolio p {
+	color: darkseagreen;
+}
+.port-works{
+	color:white;
+}
+.draw {
+	position: relative;
+	vertical-align: middle;
+	transition: color 0.25s;
+}
+
+.draw::before {
+	box-sizing: inherit;
+	content: '';
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+}
+
+.draw::after {
+	box-sizing: inherit;
+	content: '';
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.draw:hover {
+	color: black;
+}
+
+.draw:hover::before {
+	width: 100%;
+	height: 100%;
+	border-top-color: #CEFAD3;
+	border-right-color: #CEFAD3;
+	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.draw:hover::after {
+	width: 100%;
+	height: 100%;
+	border-bottom-color: #CEFAD3;
+	border-left-color: #CEFAD3;
+	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+
+/*This is the end of the code for the nav-bar*/
+
+
+/*This is the home page*/
+
+#homeHeader {
+	height: 500px;
+	background: url("pictures/IMG_3648.JPG");
+	background-attachment: scroll;
+	background-size: cover;
+	margin-right: -15px;
+}
+
+ul.nav a:hover {
+	color: #80B086 !important;
+}
+
+.main-head {
+	color: white;
+	background: url(../img/back.jpg) no-repeat center top;
+	margin-top: -50px;
+	padding-top: 250px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	background-size: 100%;
+	background-size: cover;
+}
+
+.grow {
+	border: solid 1px white;
+	width: 100%;
+	top: 75px;
+	transition: all .5s ease-in-out;
+	z-index: 1;
+	position: absolute;
+	/*	margin-bottom:200px;*/
+	overflow: hidden;
+}
+
+.grow:hover {
+	border: 0px;
+	transform: scale(2);
+	z-index: 8;
+	position: absolute;
+}
+
+
+/*This is the code for the about page*/
+
+#aboutHeader {
+	height: 500px;
+	background: url("pictures/IMG_3692.JPG");
+	filter: grayscale(100%);
+	background-attachment: scroll;
+	background-size: cover;
+	margin-right:-15px;
+
+}
+
+.aboutText h1 {
+	font-weight: 900;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.aboutText p {
+	font-size: 14px;
+}
+.aboutText{
+	color:white;
+}
+@media screen and (max-width: 700px) {
+	.aboutText h1 {
+		margin-bottom: 0
+	}
+	.aboutText p {
+		font-size: 11px;
+	}
+}
+
+/*This is the code for the works page*/
+.navbar-cover{
+	background-color:#999999;
+	height:50px;
+	backface-visibility: visible;
+}
+/*This is the code for the footer!*/
+#footer{
+	margin-right: -15px;
+}
+@media screen and (min-width: 1200px) {
+	#footer p {
+		line-height: 100px;
+		z-index: 100;
+
+
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.footer {
+		position: absolute;
+		left: 0px;
+		bottom: -648px;
+		height: 100px;
+		width: 100%;
+		background: #999;
+		/*z-index: 9;*/
+
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.footer {
+		position: absolute;
+		left: 0px;
+		bottom: -350px;
+		height: 100px;
+		width: 100%;
+		background: #999;
+		/*z-index: 9;*/
+
+	}
+}
+
+#social {
+	position: absolute;
+	bottom: 0;
+	height: 158px;
+	width: 100%;
+	z-index: -1;
+}
+
+.links {
+	text-align: center;
+}
+
+.socialImg {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	height: 50px;
+	z-index: 9;
+}
+
+.gitImg {
+	background: #999;
+	border-radius: 50%;
+	transition: all 1s ease-in-out;
+	z-index: 9;
+}
+
+.gitImg:hover {
+	background: ##999;
+	border-radius: 100%;
+	border-radius: 0;
+	z-index: 9;
+}
+
+.linkedImg {
+	background: transparent;
+	border-radius: 50%;
+	transition: all 1s ease-in-out;
+	z-index: 9;
+}
+
+.linkedImg:hover {
+	background: #1686B0;
+	border-radius: 100%;
+	border-radius: 0;
+	z-index: 9;
+}
+
+#worksHeader{
+	height: 500px;
+	background: url("pictures/codingBackground.jpg");
+	background-attachment: scroll;
+	background-size: cover;
+	margin-right:-15px;
+
+}
+.stackImgs{
+	width:100%;
+	height:224px;
+	overflow:auto;
+	background:#fff;
+}
+.worksImgContainer{
+	height: 250px;
+	width:100%;
+}
+.worksImg{
+	/*width:45em;*/
+}
+.images{
+	margin-top:100px;
+}
+.resume{
+	color:white !important;
+}
+.resume a{
+	color:white;
+}
+.resume:hover{
+	text-decoration: underline !important;
+	cursor: pointer;
+	color: white !important;
+}
+.worksHead a{
+	color:whitesmoke;
+}
+.worksHead:hover{
+	cursor:pointer;
+}
+.workText{
+	color:whitesmoke;
+}
+.blacktext{
+	color:black;
+}
