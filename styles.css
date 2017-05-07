@@ -4,8 +4,9 @@
 }
 
 .content {
-	min-height: 500px;
-	margin-bottom: 0;
+	min-height: 1000px;
+	max-height: 1000px;
+/*	margin-bottom: 0;*/
 	clear: both;
 }
 body {
@@ -27,7 +28,7 @@ body {
 	width: 225px;
 	height: 75px;
 	top: 40%;
-	left: 50%;
+	left: 43%;
 	margin-left: -50px;
 	margin-top: -25px;
 	font-weight: 300;
@@ -217,26 +218,41 @@ ul.nav a:hover {
 
 @media screen and (max-width: 400px) {
 	.footer {
-		position: absolute;
+		position: fixed;
+		bottom: 0px;
+
 		left: 0px;
-		bottom: -648px;
+		bottom: -900px;
 		height: 100px;
 		width: 100%;
 		background: #999;
-		/*z-index: 9;*/
+		z-index: 9;
 
 	}
 }
 
+
+@media screen and (max-height: 1200px){
+	.footer{position: absolute;
+		left: 0px;
+		bottom: -950px;
+		height: 100px;
+		width: 100%;
+		background: #999;
+		z-index: 9;
+	}
+}
 @media screen and (min-width: 450px) {
 	.footer {
 		position: absolute;
 		left: 0px;
-		bottom: -350px;
+		bottom: -400px;
+/*		bottom: -350px;*/
+/*		bottom: 0px;*/
 		height: 100px;
 		width: 100%;
 		background: #999;
-		/*z-index: 9;*/
+		z-index: 9;
 
 	}
 }
@@ -265,7 +281,7 @@ ul.nav a:hover {
 .gitImg {
 	background: #999;
 	border-radius: 50%;
-	transition: all 1s ease-in-out;
+	transition: all .5s ease-in-out;
 	z-index: 9;
 }
 
@@ -279,7 +295,7 @@ ul.nav a:hover {
 .linkedImg {
 	background: transparent;
 	border-radius: 50%;
-	transition: all 1s ease-in-out;
+	transition: all .5s ease-in-out;
 	z-index: 9;
 }
 
