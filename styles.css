@@ -22,7 +22,9 @@ body {
 .page-wrapper {
 	text-align: center;
 }
-
+.carousel-indicators{
+	background-color:rgba(0,0,0,.2)
+}
 .header-align {
 	position: absolute;
 	width: 225px;
