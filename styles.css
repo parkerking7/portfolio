@@ -6,25 +6,44 @@
 .content {
 	min-height: 1000px;
 	max-height: 1000px;
-/*	margin-bottom: 0;*/
+	/*	margin-bottom: 0;*/
 	clear: both;
 }
+
 body {
-	background-image: url("http://www.amsmeteors.org/wp-content/uploads/2013/08/IMG_1305-perseid-tree-composite.jpg");
-
-
+	background: #bdc3c7;
+	
+	background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+	background: linear-gradient(to left, #2c3e50, #bdc3c7);
+	
 }
+.enter{
+height:1400px;
+	width:100%;
+	background: url("http://www.amsmeteors.org/wp-content/uploads/2013/08/IMG_1305-perseid-tree-composite.jpg");
+	background-attachment: scroll;
+/*	background-size: cover;*/
+	margin-right: -15px;
+	background-repeat: no-repeat;
+}
+
+
 /**{*/
-	/*box-sizing: border-box;*/
+
+
+/*box-sizing: border-box;*/
+
 
 /*}*/
 
 .page-wrapper {
 	text-align: center;
 }
-.carousel-indicators{
-	background-color:rgba(0,0,0,.2)
+
+.carousel-indicators {
+	background-color: rgba(0, 0, 0, .2)
 }
+
 .header-align {
 	position: absolute;
 	width: 225px;
@@ -60,9 +79,11 @@ body {
 .portfolio p {
 	color: darkseagreen;
 }
-.port-works{
-	color:white;
+
+.port-works {
+	color: white;
 }
+
 .draw {
 	position: relative;
 	vertical-align: middle;
@@ -173,8 +194,7 @@ ul.nav a:hover {
 	filter: grayscale(100%);
 	background-attachment: scroll;
 	background-size: cover;
-	margin-right:-15px;
-
+	margin-right: -15px;
 }
 
 .aboutText h1 {
@@ -186,9 +206,11 @@ ul.nav a:hover {
 .aboutText p {
 	font-size: 14px;
 }
-.aboutText{
-	color:white;
+
+.aboutText {
+	color: white;
 }
+
 @media screen and (max-width: 700px) {
 	.aboutText h1 {
 		margin-bottom: 0
@@ -198,23 +220,27 @@ ul.nav a:hover {
 	}
 }
 
+
 /*This is the code for the works page*/
-.navbar-cover{
-	background-color:#999999;
-	height:50px;
+
+.navbar-cover {
+	background-color: #999999;
+	height: 50px;
 	backface-visibility: visible;
 }
+
+
 /*This is the code for the footer!*/
-#footer{
+
+#footer {
 	margin-right: -15px;
-/*	margin-top:-10px;*/
+	/*	margin-top:-10px;*/
 }
+
 @media screen and (min-width: 1200px) {
 	#footer p {
 		line-height: 100px;
 		z-index: 100;
-
-
 	}
 }
 
@@ -222,20 +248,18 @@ ul.nav a:hover {
 	.footer {
 		position: fixed;
 		bottom: 0px;
-
 		left: 0px;
 		bottom: -900px;
 		height: 100px;
 		width: 100%;
 		background: #999;
 		z-index: 9;
-
 	}
 }
 
-
-@media screen and (max-height: 1200px){
-	.footer{position: absolute;
+@media screen and (max-height: 1200px) {
+	.footer {
+		position: absolute;
 		left: 0px;
 		bottom: -950px;
 		height: 100px;
@@ -244,18 +268,18 @@ ul.nav a:hover {
 		z-index: 9;
 	}
 }
+
 @media screen and (min-width: 450px) {
 	.footer {
 		position: absolute;
 		left: 0px;
-		bottom: -400px;
-/*		bottom: -350px;*/
-/*		bottom: 0px;*/
+		/*		bottom: -400px;*/
+		/*		bottom: -350px;*/
+		/*		bottom: 0px;*/
 		height: 100px;
 		width: 100%;
 		background: #999;
 		z-index: 9;
-
 	}
 }
 
@@ -308,50 +332,57 @@ ul.nav a:hover {
 	z-index: 9;
 }
 
-#worksHeader{
-	height: 500px;
-	background: url("pictures/codingBackground.jpg");
-	background-attachment: scroll;
-	background-size: cover;
-	margin-right:-15px;
+.works-head {
+	color: white;
+	margin-top: 75px;
+}
 
+.stackImgs {
+	width: 100%;
+	height: 224px;
+	overflow: auto;
+	background: #fff;
 }
-.stackImgs{
-	width:100%;
-	height:224px;
-	overflow:auto;
-	background:#fff;
-}
-.worksImgContainer{
+
+.worksImgContainer {
 	height: 250px;
-	width:100%;
+	width: 100%;
 }
-.worksImg{
+
+.worksImg {
 	/*width:45em;*/
 }
-.images{
-	margin-top:100px;
+
+.images {
+	margin-top: 100px;
 }
-.resume{
-	color:white !important;
+
+.resume {
+	color: white !important;
 }
-.resume a{
-	color:white;
+
+.resume a {
+	color: white;
 }
-.resume:hover{
+
+.resume:hover {
 	text-decoration: underline !important;
 	cursor: pointer;
 	color: white !important;
 }
-.worksHead a{
-	color:whitesmoke;
+
+.worksHead a {
+	color: whitesmoke;
 }
-.worksHead:hover{
-	cursor:pointer;
+
+.worksHead:hover {
+	cursor: pointer;
 }
-.workText{
-	color:whitesmoke;
+
+.workText {
+	color: whitesmoke;
 }
-.blacktext{
-	color:black;
+
+.blacktext {
+	color: black;
 }
